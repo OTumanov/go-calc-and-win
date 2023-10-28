@@ -44,7 +44,7 @@ func getHardAttack() int {
 func compareValues(enemyHealth, userTotalAttack int) bool {
 	pointDifference := enemyHealth - userTotalAttack
 	// if pointDifference < 0 {
-		// pointDifference = -pointDifference
+	// pointDifference = -pointDifference
 	// 	fmt.Println("Очки здоровья противника:", pointDifference)
 	// }
 	// fmt.Println("Очки здоровья противника:", pointDifference)
