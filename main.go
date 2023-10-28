@@ -43,9 +43,11 @@ func getHardAttack() int {
 
 func compareValues(enemyHealth, userTotalAttack int) bool {
 	pointDifference := enemyHealth - userTotalAttack
-	if pointDifference < 0 {
-		pointDifference = -pointDifference
-	}
+	// if pointDifference < 0 {
+		// pointDifference = -pointDifference
+	// 	fmt.Println("Очки здоровья противника:", pointDifference)
+	// }
+	// fmt.Println("Очки здоровья противника:", pointDifference)
 	return pointDifference <= 10
 }
 
@@ -84,7 +86,7 @@ func runGame() bool {
 		fmt.Println("В этот раз не повезло :( Бой проигран.")
 	}
 	answer := input("Чтобы сыграть ещё раз, введи букву [y] или [Y]: ")
-	return answer == "Y"
+	return answer == "Y" || answer == "y"
 }
 
 func main() {
